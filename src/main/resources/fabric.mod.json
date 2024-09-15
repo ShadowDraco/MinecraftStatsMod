@@ -3,9 +3,9 @@
 	"id": "minecraftstats",
 	"version": "${version}",
 	"name": "minecraftstats",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Add your stats to a global leaderboard!",
 	"authors": [
-		"Me!"
+		"Ethan Storm"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
