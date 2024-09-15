@@ -25,9 +25,10 @@ public class Minecraftstats implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("MCStats loading");
-		String jsonString = "{ 'name': 'Games Loaded', 'playerName': 'Draco', 'count': '1'}";
-		JsonObject jsonObject = (JsonObject) new JsonParser().parse(jsonString);
+
         try {
+            String jsonString = "{ 'name': 'Games Loaded', 'playerName': 'Draco', 'count': '1'}";
+            JsonObject jsonObject = (JsonObject) new JsonParser().parse(jsonString);
             postNewStat("http://localhost:3001/stats/new", jsonObject);
         } catch (IOException e) {
             throw new RuntimeException(e);

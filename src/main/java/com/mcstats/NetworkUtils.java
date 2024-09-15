@@ -20,7 +20,6 @@ public class NetworkUtils {
             request.setEntity(params);
             httpClient.execute(request);
             httpClient.close();
-            System.out.println("Game Loaded");
         } catch(Exception e) {
             System.out.println("Error sending request" + e.getMessage());
         }
